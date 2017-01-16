@@ -1,11 +1,12 @@
 # Criando um Componente
------------------------
-## Descrção
+
+## Descrição
 Projeto destinado a criação do primeiro componente.
+
 
 ## Conceitos
 
-### Criando um novo componente no Angular - CIDAR
+### •Criando um novo componente no Angular - CIDAR
 
   1. Class (Criar a classe)
   2. Import
@@ -13,7 +14,7 @@ Projeto destinado a criação do primeiro componente.
   4. Alterar (add meta-dados necessarios)
   5. Repetir (até criar todos componentes)
 
-### Interpolação - Inserir uma variável dentro do Template
+### •Interpolação - Inserir uma variável dentro do Template
 _Exemplo:_
 ```ts
 @Component({
@@ -27,7 +28,7 @@ _Exemplo:_
     }
 ```
 
-### Sempre que referenciar uma url de template (templateUrl) deve ser adicionado o _moduleId_.
+### •Sempre que referenciar uma url de template (templateUrl) deve ser adicionado o _moduleId_.
 _Exemplo:_
 ```ts
     @Component({

@@ -1,0 +1,6 @@
+Criando um novo componente no Angular - CIDAR
+> Class (Criar a classe)
+> Import
+> Decorate (Decorar a classe)
+> Alterar (add meta-dados necessarios)
+> Repetir (até criar todos componentes)

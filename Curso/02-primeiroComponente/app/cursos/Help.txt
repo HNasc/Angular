@@ -1,0 +1,20 @@
+Inserir uma variável dentro do Template é chamado de Interpolação
+Exemplo:
+    "@Component({
+        selector: 'cursos-lista',
+        template: `
+            <h3>Olá, meu nome é {{ nome }}</h3>
+        ` 
+    })
+    export class CursosComponent {
+            nome = 'Otavio'; //variavel
+    }"
+    
+    
+Sempre que referenciar uma url de template (templateUrl) deve ser adicionado o moduleId.
+Exemplo:
+    @Component({
+        moduleId: module.id, //Sem esse cara, o arquivo referenciado no templateUrl não é chamado
+        selector: 'cursos-lista',
+        templateUrl: 'cursos.component.html'
+    })

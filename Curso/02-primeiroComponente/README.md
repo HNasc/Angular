@@ -1,8 +1,7 @@
 # Criando um Componente
-=========================
+-----------------------
 ## Descrção
 Projeto destinado a criação do primeiro componente.
--------------------------
 
 ## Conceitos
 
@@ -15,7 +14,6 @@ Projeto destinado a criação do primeiro componente.
   5. Repetir (até criar todos componentes)
 
 ### Interpolação - Inserir uma variável dentro do Template
-
 _Exemplo:_
 ```ts
 @Component({

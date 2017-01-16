@@ -1,20 +1,40 @@
-# Angular 2  Boilerplate
+# Criando um Componente
+=========================
+## Descrção
+Projeto destinado a criação do primeiro componente.
+-------------------------
 
-## Description
-Angular 2 starter project using TypeScript
+## Conceitos
 
-## Usage
-You need to install npm and Typescript in your machine prior executing this project:
+### Criando um novo componente no Angular - CIDAR
 
-1: Clone repo
+  1. Class (Criar a classe)
+  2. Import
+  3. Decorate (Decorar a classe)
+  4. Alterar (add meta-dados necessarios)
+  5. Repetir (até criar todos componentes)
+
+### Interpolação - Inserir uma variável dentro do Template
+
+_Exemplo:_
+```ts
+@Component({
+        selector: 'cursos-lista',
+        template: `
+            <h3>Olá, meu nome é {{ nome }}</h3>
+        ` 
+    })
+    export class CursosComponent {
+            nome = 'Otavio'; //variavel
+    }
 ```
-git clone https://github.com/loiane/angular-2-boilerplate.git
-```
-2: Install packages
-```
-npm install
-```
-3: Start server (includes auto refreshing)
-```
-npm start
+
+### Sempre que referenciar uma url de template (templateUrl) deve ser adicionado o _moduleId_.
+_Exemplo:_
+```ts
+    @Component({
+        moduleId: module.id, //Sem esse cara, o arquivo referenciado no templateUrl não é chamado
+        selector: 'cursos-lista',
+        templateUrl: 'cursos.component.html'
+    })
 ```

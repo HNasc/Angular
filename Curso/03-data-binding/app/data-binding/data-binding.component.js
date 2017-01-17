@@ -13,15 +13,40 @@ var DataBindingComponent = (function () {
     function DataBindingComponent() {
         this.url = 'http://otavio.com';
         this.urlImg = 'http://lorempixel.com/400/200/';
+        this.conteudoAtual = '';
+        this.conteudoSalvo = '';
+        this.isMouseOver = false;
     }
     DataBindingComponent.prototype.getValor = function () {
         return 1;
+    };
+    DataBindingComponent.prototype.onClick = function () {
+        alert('Botão clicado!');
+    };
+    DataBindingComponent.prototype.onKeyup = function (event) {
+        console.log(event);
+        this.conteudoAtual = event.target.value;
+    };
+    DataBindingComponent.prototype.onSave = function (valor) {
+        this.conteudoSalvo = valor;
+    };
+    DataBindingComponent.prototype.onMouseSpan = function () {
+        this.isMouseOver = !this.isMouseOver;
     };
     DataBindingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'exemplo-data-binding',
-            templateUrl: 'data-binding.component.html'
+            templateUrl: 'data-binding.component.html',
+            /*styles: [
+                `
+                .highlight{
+                    background-color: yellow;
+                    font-weight: bold;
+                }
+                `
+            ]*/
+            styleUrls: ['data-binding.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], DataBindingComponent);

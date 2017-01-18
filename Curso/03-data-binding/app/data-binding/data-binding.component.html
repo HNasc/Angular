@@ -1,4 +1,4 @@
-<section class="property-binding">   
+<!--<section class="property-binding">   
     <article>
         <h3>Interpolation / Interpolação</h3>
         <p>String renderizada com interpolation {{ url }}</p>
@@ -72,6 +72,39 @@
                 [class.highlight]="isMouseOver">
                 Passe o mouse sobre mim!
             </span>
+        </div>
+    </article>
+</section>
+<section class="Two-way-binding">
+    <article>
+        <h3>Two-way data binding</h3>
+        <div>
+            <input type="text"
+                [value]="nome"
+                (input)="nome = $event.target.value"/>
+                <br><br>
+            <input type="text"
+                [ngModel]="nome"
+                (ngModelChange)="nome = $event"/>
+                <br><br>
+            <input type="text"
+                [(ngModel)]="nome"/> <!-- TWO-WAY-DATA-BINDING (banana in the box)
+            <p>Você digitou {{ nome }}</p>
+        </div>
+
+        <div>
+            Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.
+            <br><br>
+            <input type="text" [(ngModel)]="pessoa.nome"/>
+            <input type="text" [(ngModel)]="pessoa.idade"/>
+        </div>
+    </article>
+</section>-->
+<section class="input-properties">
+    <article>
+        <h3>Input/Output Properties</h3>
+        <div>
+            <curso nomeCurso="Angular 2"></curso>
         </div>
     </article>
 </section>

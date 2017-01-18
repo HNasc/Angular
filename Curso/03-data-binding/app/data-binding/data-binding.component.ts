@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
-import
+
+import { InputPropertyComponent } from './input-property.component'
 @Component({
     moduleId: module.id,
     selector: 'exemplo-data-binding',
-    templateUrl: 'data-binding.component.html'
+    templateUrl: 'data-binding.component.html',
     /*styles: [
         `
         .highlight{
@@ -13,7 +14,8 @@ import
         }
         `
     ]*/
-    styleUrls: ['data-binding.component.css']
+    styleUrls: ['data-binding.component.css'],
+    directives: [InputPropertyComponent]
 })
 export class DataBindingComponent {
     constructor() { }
@@ -25,6 +27,10 @@ export class DataBindingComponent {
     conteudoSalvo : string = '';
 
     isMouseOver = false;
+
+    nome : string = 'abc';
+
+    pessoa = {nome: '', idade: 18};
 
     getValor(){
         return 1;

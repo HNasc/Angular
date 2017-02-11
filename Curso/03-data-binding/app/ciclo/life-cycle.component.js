@@ -13,12 +13,14 @@ var LifeCycleComponent = (function () {
     function LifeCycleComponent() {
         this.valorInicial = 10;
         this.log('constructor');
+        console.log(this.variavelLocalP);
     }
     LifeCycleComponent.prototype.ngOnChanges = function () {
         this.log('ngOnChanges');
     };
     LifeCycleComponent.prototype.ngOnInit = function () {
         this.log('ngOnInit');
+        console.log(this.variavelLocalP);
     };
     LifeCycleComponent.prototype.ngDoCheck = function () {
         this.log('ngDoCheck');
@@ -28,12 +30,14 @@ var LifeCycleComponent = (function () {
     };
     LifeCycleComponent.prototype.ngAfterContentChecked = function () {
         this.log('ngAfterContentChecked');
+        console.log(this.variavelLocalP);
     };
     LifeCycleComponent.prototype.ngAfterViewInit = function () {
         this.log('ngAfterViewInit');
     };
     LifeCycleComponent.prototype.ngAfterViewChecked = function () {
         this.log('ngAfterViewChecked');
+        console.log(this.variavelLocalP);
     };
     LifeCycleComponent.prototype.ngOnDestroy = function () {
         this.log('ngOnDestroy');
@@ -45,11 +49,15 @@ var LifeCycleComponent = (function () {
         core_1.Input(), 
         __metadata('design:type', Object)
     ], LifeCycleComponent.prototype, "valorInicial", void 0);
+    __decorate([
+        core_1.ViewChild('variavelLocalP'), 
+        __metadata('design:type', HTMLElement)
+    ], LifeCycleComponent.prototype, "variavelLocalP", void 0);
     LifeCycleComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'lifecycle',
-            template: "\n        <p>{{ valorInicial }}</p>\n    ",
+            template: "\n        <p #variavelLocalP>{{ valorInicial }}</p>\n        <p>{{ variavelLocalP.textContent }}</p>\n    ",
         }), 
         __metadata('design:paramtypes', [])
     ], LifeCycleComponent);

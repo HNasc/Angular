@@ -12,8 +12,7 @@ import { CursosServices } from './cursos.service'
             </li>
         </ul>
     ` */
-    templateUrl: 'cursos.component.html',
-    providers: [CursosServices] //Fornecendo uma instancia da classe CursoService para a classe CursosComponent
+    templateUrl: 'cursos.component.html'
 })
 export class CursosComponent {
     

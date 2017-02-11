@@ -21,7 +21,7 @@ var InputPropertyComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'curso',
-            templateUrl: '{{ nomeCurso }}'
+            template: '{{ nomeCurso }}'
         }), 
         __metadata('design:paramtypes', [])
     ], InputPropertyComponent);

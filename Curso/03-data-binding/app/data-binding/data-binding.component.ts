@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 
-import { InputPropertyComponent } from './input-property.component'
 @Component({
     moduleId: module.id,
     selector: 'exemplo-data-binding',
@@ -14,14 +13,13 @@ import { InputPropertyComponent } from './input-property.component'
         }
         `
     ]*/
-    styleUrls: ['data-binding.component.css'],
-    directives: [InputPropertyComponent]
+    styleUrls: ['data-binding.component.css']
 })
 export class DataBindingComponent {
     constructor() { }
 
     url = 'http://otavio.com';
-    urlImg = 'http://lorempixel.com/400/200/';
+    urlImg = 'https://www.jotform.com/resources/assets/logo/min/jotform-logo-orange-400x200.png';
 
     conteudoAtual : string = '';
     conteudoSalvo : string = '';

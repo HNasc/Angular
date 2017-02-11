@@ -9,11 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var input_property_component_1 = require('./input-property.component');
 var DataBindingComponent = (function () {
     function DataBindingComponent() {
         this.url = 'http://otavio.com';
-        this.urlImg = 'http://lorempixel.com/400/200/';
+        this.urlImg = 'https://www.jotform.com/resources/assets/logo/min/jotform-logo-orange-400x200.png';
         this.conteudoAtual = '';
         this.conteudoSalvo = '';
         this.isMouseOver = false;
@@ -49,8 +48,7 @@ var DataBindingComponent = (function () {
                 }
                 `
             ]*/
-            styleUrls: ['data-binding.component.css'],
-            directives: [input_property_component_1.InputPropertyComponent]
+            styleUrls: ['data-binding.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], DataBindingComponent);
